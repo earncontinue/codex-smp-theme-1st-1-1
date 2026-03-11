@@ -1,0 +1,17 @@
+/*
+Theme Name: Just-start
+Theme URI: https://example.com/themes/just-start
+Author: Just-start Themes
+Author URI: https://example.com
+Description: Just-start is a multipurpose, WooCommerce-ready WordPress theme built for professional business websites, blogs, and online stores. It includes a modern header and footer, classic widget panel support, clean archive and single post templates, and production-ready structure for selling use cases.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.5
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: just-start
+Tags: blog, e-commerce, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, one-column, two-columns, custom-background
+*/
+
+/* Base styles are loaded from assets/css/main.css */
