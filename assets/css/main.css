@@ -1,0 +1,93 @@
+:root {
+  --orange: #f6921e;
+  --dark: #1f2937;
+  --bg: #efefef;
+  --line: #e4e4e4;
+  --text: #374151;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: var(--bg); color: var(--text); }
+.container { width: min(100% - 24px, 1280px); margin-inline: auto; }
+a { text-decoration: none; color: inherit; }
+
+.top-strip { background: #1f2937; color: #fff; font-size: 12px; }
+.top-strip-inner { display: flex; justify-content: space-between; padding: 6px 0; }
+.top-links { display: flex; gap: 16px; }
+
+.main-header-row { display: grid; grid-template-columns: 220px 1fr; gap: 20px; align-items: center; padding: 14px 0; background: #fff; }
+.suntech-brand { display: inline-flex; align-items: center; gap: 8px; font-weight: 700; text-transform: uppercase; }
+.brand-mark { width: 24px; height: 24px; border: 4px solid var(--orange); border-radius: 50%; border-top-color: transparent; }
+.brand-text { font-size: 24px; color: #222; }
+
+.header-search { display: grid; grid-template-columns: 1fr 200px 52px; border: 2px solid var(--orange); border-radius: 3px; overflow: hidden; }
+.header-search input, .header-search select, .header-search button { border: 0; padding: 11px 12px; font-size: 14px; }
+.header-search button { background: var(--orange); color: #fff; }
+
+.main-navigation { background: #fff; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.nav-inner { position: relative; }
+.main-navigation ul { list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; }
+.main-navigation a { display: block; padding: 11px 18px; font-size: 12px; font-weight: 700; text-transform: uppercase; }
+.menu-toggle { display: none; }
+
+.home-hero { background: var(--orange); color: #fff; margin-top: 10px; }
+.home-hero-inner { display: grid; grid-template-columns: 1fr 320px; align-items: center; gap: 20px; padding: 22px 0; }
+.hero-badge { display: inline-block; background: #fff; color: var(--orange); font-size: 11px; padding: 5px 8px; border-radius: 999px; font-weight: 700; }
+.hero-content h1 { font-size: 52px; margin: 10px 0 8px; line-height: 1; }
+.hero-content p { margin: 0 0 10px; }
+.hero-price { margin: 10px 0; font-size: 24px; font-weight: 700; }
+.hero-actions { display: flex; gap: 10px; }
+.btn-dark, .btn-light { padding: 10px 15px; border-radius: 4px; font-size: 13px; font-weight: 700; }
+.btn-dark { background: #101828; color: #fff; }
+.btn-light { background: #fff; color: #111; }
+.hero-image { background: #fff; border: 6px solid #c9690d; border-radius: 8px; padding: 10px; text-align: center; }
+.hero-image img { max-width: 100%; height: auto; }
+
+.home-features { background: #fff; border-bottom: 1px solid var(--line); }
+.home-features ul { list-style: none; margin: 0; padding: 14px 0; display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; font-size: 12px; font-weight: 700; text-transform: uppercase; }
+
+.home-product-section { margin-top: 14px; }
+.section-head { display: flex; justify-content: space-between; align-items: center; background: #fff; border: 1px solid var(--line); border-bottom: 0; border-radius: 8px 8px 0 0; padding: 12px 14px; }
+.section-head h2 { margin: 0; font-size: 16px; text-transform: uppercase; }
+.section-head a { font-size: 12px; color: #111; font-weight: 700; }
+
+.home-product-grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 10px; background: #fff; border: 1px solid var(--line); border-radius: 0 0 8px 8px; padding: 12px; }
+.home-product-card { border: 1px solid #ffd4b0; border-radius: 5px; padding: 8px; background: #fff; }
+.home-product-thumb { display: block; position: relative; overflow: hidden; border: 1px solid #f3f4f6; }
+.home-product-thumb img { width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block; }
+.home-product-thumb::after { content: ''; position: absolute; inset: 0; background: rgba(0, 0, 0, 0); transition: background .2s ease; }
+.home-product-card:hover .home-product-thumb::after { background: rgba(0, 0, 0, 0.2); }
+.home-product-card h3 { margin: 8px 0 4px; font-size: 12px; line-height: 1.35; min-height: 32px; }
+.home-product-price { color: #111; font-weight: 700; font-size: 12px; }
+
+.content-wrap { display: grid; grid-template-columns: minmax(0,1fr) 320px; gap: 20px; padding: 20px 0; }
+.post-card, .single-post, .search-result-card, .widget, .comments-area { background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 14px; margin-bottom: 14px; }
+
+.suntech-footer { margin-top: 26px; background: #fff; border-top: 3px solid var(--orange); }
+.footer-newsletter { background: var(--orange); color: #fff; padding: 14px 0; }
+.footer-newsletter-inner { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.newsletter-form { display: flex; gap: 8px; }
+.newsletter-form input { border: 0; border-radius: 999px; padding: 10px 14px; min-width: 280px; }
+.newsletter-form button { border: 0; border-radius: 999px; background: #111; color: #fff; padding: 10px 16px; font-weight: 700; }
+.footer-widgets { display: grid; grid-template-columns: 1.3fr 1fr 1fr 1fr; gap: 18px; padding: 22px 0; }
+.footer-brand-block p { font-size: 13px; }
+.site-info { border-top: 1px solid var(--line); padding: 14px 0; text-align: center; font-size: 12px; }
+
+.screen-reader-text { clip: rect(1px,1px,1px,1px); position: absolute!important; }
+
+@media (max-width: 1100px) {
+  .home-product-grid { grid-template-columns: repeat(4, minmax(0,1fr)); }
+  .home-features ul { grid-template-columns: repeat(3,1fr); }
+}
+@media (max-width: 800px) {
+  .main-header-row { grid-template-columns: 1fr; }
+  .header-search { grid-template-columns: 1fr; }
+  .home-hero-inner { grid-template-columns: 1fr; }
+  .hero-content h1 { font-size: 36px; }
+  .menu-toggle { display: inline-block; margin: 6px 0; }
+  .main-navigation ul { display: none; flex-direction: column; }
+  .main-navigation.toggled ul { display: flex; }
+  .home-product-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .footer-newsletter-inner, .footer-widgets { display: grid; grid-template-columns: 1fr; }
+  .content-wrap { grid-template-columns: 1fr; }
+}
